@@ -1,0 +1,9 @@
+instance: 1   # this is the first building in the dataset
+original_name: location001   # original name from REDD dataset
+elec_meters:
+  1: &blued_whole_house 
+    site_meter: true
+    device_model: BLUED_whole_house
+  2: *blued_whole_house
+appliances:
+

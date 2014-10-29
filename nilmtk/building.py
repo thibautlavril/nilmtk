@@ -28,6 +28,8 @@ class Building(Hashable):
             self.metadata['dataset'] = dataset_name
         elec_meters = self.metadata.pop('elec_meters', {})
         appliances = self.metadata.pop('appliances', [])
+        if not appliances:
+            appliances = []
         self.elec.load(store, elec_meters, appliances, self.identifier)
                 
     def save(self, destination, key):

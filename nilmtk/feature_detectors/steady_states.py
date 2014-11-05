@@ -85,7 +85,7 @@ def find_steady_states(dataframe, min_n_samples=2, stateThreshold=15,
             # (lastTransition,))
 
             # Sum Boolean array to verify if transition is above noise level
-            if np.sum(np.fabs(lastTransition) > noise_level):
+            if np.sum(np.fabs(lastTransition) > noise_level): 
                 # 3A, C: if so add the index of the transition start and the
                 # power information
 
